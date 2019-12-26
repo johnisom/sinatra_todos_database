@@ -1,12 +1,21 @@
 # frozen_string_literal: true
 
 require 'pg'
+require 'sinatra/base'
 
 # Interface to sinatra application for storage and data manipulation
 class DatabasePersistence
   def initialize(logger)
     @logger = logger
-    @db = PG.connect(dbname: 'todos')
+    @db = if Sinatra::Base.production?
+            PG.connect(ENV['DATABASE_URL'])
+          else
+            PG.connect(dbname: 'todos')
+          end
+  end
+
+  def disconnect
+    @db.close
   end
 
   def find_list(id)

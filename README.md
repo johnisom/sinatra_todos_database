@@ -1,5 +1,8 @@
 # Sinatra Todos&mdash;Database #
 
+Database persistent Sinatra-backed ruby web application for creating,
+viewing, editing, and deleting to-do lists and their respective to-dos. 
+
 This is a todo list manager powered by Sinatra and PostgreSQL. It offers
 permanent database persistence, multiple todo lists, each with their own
 todos, and editable todos & todo lists.

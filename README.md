@@ -25,6 +25,15 @@ $ touch ~/.psql_history
 ```
 
 Instructions for installing PostgreSQL can be found on [Launch School’s
-installation instructions][install]
+installation instructions][install].
+
+After you have installed the proper dependencies (`bundle install`, the
+instructions for Postgres above) you need to then create the proper database
+schema by running these commands:
+
+```
+$ echo 'CREATE DATABASE todos;' | psql
+$ psql todos < schema.sql
+```
 
 [install]: https://launchschool.com/blog/how-to-install-postgres-for-linux

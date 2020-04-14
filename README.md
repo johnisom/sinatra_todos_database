@@ -1,9 +1,16 @@
-# sinatra\_todos\_database #
+# Sinatra Todos&mdash;Database #
 
 The repository containing all the commits for this project before the move
 into a separate repo is found [here](https://github.com/johnisom/RB185).
 
-This is a todo list manager powered by Sinatra and PostgreSQL.
+This is a todo list manager powered by Sinatra and PostgreSQL. It offers
+permanent database persistence, multiple todo lists, each with their own
+todos, and editable todos & todo lists.
+
+<p align="center">
+  <img alt="GIF screen recording of application in use"
+       src="assets/example.gif">
+</p>
 
 To be able to run this server locally, you must have PostgreSQL installed on
 your machine. To do this, enter these commands (for Debian-based GNU/Linux

@@ -9,7 +9,7 @@ todos, and editable todos & todo lists.
 
 <p align="center">
   <img alt="GIF screen recording of application in use"
-       src="assets/example.gif">
+       src="example.gif">
 </p>
 
 To be able to run this server locally, you must have PostgreSQL installed on

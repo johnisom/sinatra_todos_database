@@ -1,8 +1,5 @@
 # Sinatra Todos&mdash;Database #
 
-The repository containing all the commits for this project before the move
-into a separate repo is found [here](https://github.com/johnisom/RB185).
-
 This is a todo list manager powered by Sinatra and PostgreSQL. It offers
 permanent database persistence, multiple todo lists, each with their own
 todos, and editable todos & todo lists.

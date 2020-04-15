@@ -12,6 +12,8 @@ todos, and editable todos & todo lists.
        src="example.gif">
 </p>
 
+## Installation ##
+
 To be able to run this server locally, you must have PostgreSQL installed on
 your machine. To do this, enter these commands (for Debian-based GNU/Linux
 users):
@@ -42,5 +44,8 @@ schema by running these commands:
 $ echo 'CREATE DATABASE todos;' | psql
 $ psql todos < schema.sql
 ```
+
+After all of that, you can run the server with (`bundle exec rackup`) and
+view the site at http://localhost:9292/.
 
 [install]: https://launchschool.com/blog/how-to-install-postgres-for-linux

@@ -36,16 +36,18 @@ $ touch ~/.psql_history
 Instructions for installing PostgreSQL can be found on [Launch School’s
 installation instructions][install].
 
-After you have installed the proper dependencies (`bundle install`, the
-instructions for Postgres above) you need to then create the proper database
-schema by running these commands:
+After you have `psql` set up, follow these instructions:
 
+1. Clone this repository (`git clone https://github.com/johnisom/sinatra_todos_database`)
+2. `cd` into the repository (`cd sinatra_todos_database`)
+3. Install dependencies (`bundle install`)
+   - If you don’t have ruby-2.6.5, install it
+4. Create the database schema:
 ```
-$ echo 'CREATE DATABASE todos;' | psql
+$ echo 'create database todos;' | psql
 $ psql todos < schema.sql
 ```
-
-After all of that, you can run the server with (`bundle exec rackup`) and
-view the site at http://localhost:9292/.
+5. Run the server locally (`bundle exec rackup`)
+6. Enjoy your todo app at http://localhost:9292/
 
 [install]: https://launchschool.com/blog/how-to-install-postgres-for-linux
